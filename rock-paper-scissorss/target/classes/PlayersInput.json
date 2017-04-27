@@ -1,0 +1,12 @@
+{
+    "Player1":[
+        "rock",
+        "rock",
+        "scissors"
+    ],
+    "Player2":[
+        "paper",
+        "rock",
+        "paper"
+    ]
+}

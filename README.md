@@ -85,5 +85,3 @@ player1 choose  scissors     on the 2-th invocation.
 Winner of  1-th round is null
 Winner of  2-th round is player1
 Winner of each round :[player2, null, player1]
-
-             

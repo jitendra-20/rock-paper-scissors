@@ -83,7 +83,8 @@ How to run :
 
 i)Either import this maven project in eclipse and run it.It can be run as Java application or JUnit Test
 
-ii)I have build the jar too. 
+ii)Using mvn clean install command, Jar can be built.
+
 
 It can be run as “ java –jar rock-paper-scissorss-0.0.1-SNAPSHOT.jar  playersInput.json”
 

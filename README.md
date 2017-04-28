@@ -1,4 +1,3 @@
-# rock-paper-scissors
 Write a multithreaded program that takes the following input:
 
 {
@@ -44,8 +43,8 @@ What's not in scope:
 
 Performance optimization
 
-Catching every single corner case
-=======================================================================================================
+
+
 **Documentation:**
 This is Maven project. It has 7 java classes and one JSON file.
 This program expects player's input in JSON file. If the input file has not been passed, it will use the file which is present under \src\main\resources folder.  

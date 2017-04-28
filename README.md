@@ -54,25 +54,45 @@ Player1 and Player2 threads are the producers who will produce their choice and 
 Player3 thread is the consumer(Judge) which selects the winner of each round.
 
 1)package: com.couchbase.game  
+
      i)ConsumerPlayer.Java // This class picks the data from both the queue (player1Queue and Player2Queue) and selects the winner based on the rules defined in Rules.Java 
+     
      ii)ProducerPlayer.Java// This class is used by both the players to produce their turn(choice). It puts the data in the Blocking Queue.
+     
      iii)RockPaperScissors // This the main class which starts the 3 threads and prints the result at the end.
+     
 2)package: com.couchbase.model;
+
       i)Players.java      // This is the model class for the given json file. 
+      
 3)package: com.couchbase.util;
+
       i)ProcessPlayersFile.java //I have used ObjectMapper to read the json file.
+      
       ii)Rules.java    // Defines the winning rule.Used the HashMap to store the rules.
+      
  4)Under src/test/java
+ 
        RockPaperScissorsTest.java // This is test class which picks the input file from resources folder and run two test cases. 
+       
  5)Under resources folders:
+ 
        i>PlayersInput.json // Input file
+       
 How to run :
+
 i)Either import this maven project in eclipse and run it.It can be run as Java application or JUnit Test
+
 ii)I have build the jar too. 
+
 It can be run as “ java –jar rock-paper-scissorss-0.0.1-SNAPSHOT.jar  playersInput.json”
+
 or
+
 It can be run as “ java –jar rock-paper-scissorss-0.0.1-SNAPSHOT.jar”
+
 Expected Output:
+
 Player1 Input: [rock, rock, scissors]
 Player2 Input: [paper, rock, paper]
 #############################################################

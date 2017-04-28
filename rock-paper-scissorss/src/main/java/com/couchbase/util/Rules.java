@@ -3,6 +3,8 @@ package com.couchbase.util;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.couchbase.game.RockPaperScissors;
+
 public class Rules {
 	
 	private final Map<String,String> rulesToWin= new HashMap<String,String>();
@@ -20,7 +22,10 @@ public class Rules {
 	}
 	
 	public String slectWinner(String key){
-		return rulesToWin.get(key);
-		
-	}
+		if(!rulesToWin.containsKey(key)) 
+			System.out.println("ERROR: Check the value passed by  player1 or player2. Supported values are rock,scissors,paper ");
+	
+		return rulesToWin.get(key);	 
+	}	
+	
 }

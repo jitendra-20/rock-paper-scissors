@@ -18,8 +18,8 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
+      <version>4.11</version>
+      <scope>test</scope> 
     </dependency>
     <dependency>
   		<groupId>com.fasterxml.jackson.core</groupId>
@@ -38,4 +38,37 @@
   	</dependency>
     
   </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <version>2.4.1</version>
+        <configuration>
+        	<descriptorRefs>
+			<descriptorRef>jar-with-dependencies</descriptorRef>
+		</descriptorRefs>
+		<finalName>${project.artifactId}-${project.version}</finalName>
+                <appendAssemblyId>false</appendAssemblyId>
+		<archive>
+                	<manifest>
+                    	     <mainClass>com.couchbase.game.RockPaperScissors</mainClass>
+                	</manifest>
+            	</archive>
+        </configuration>
+        <executions>
+	        <execution>
+			<id>make-assembly</id>
+                        <!-- bind to the packaging phase -->
+			<phase>package</phase> 
+			<goals>
+			     <goal>single</goal>
+			</goals>
+					
+		</execution>
+	</executions>
+    </plugin>
+    </plugins>
+    </build>
+    
 </project>

@@ -15,22 +15,20 @@ class ConsumerPlayer  implements Runnable {
 		sharedQ=result;
 		this.player1Q=player1Q;
 	    this.player2Q=player2Q;
-		
 	}
-	
+	@Override
 	public void run() {
 		  try {
 			  while (turns<3){
-				  String key1=player1Q.take();
-				  String key2=player2Q.take();
-				  sharedQ.add(rule.slectWinner(key1+":"+key2));
-				   turns++;
+				  String player1Choice=player1Q.take();
+				  String player2Choice=player2Q.take();
+				  System.out.format("Winner of  %d-th round is %s\n",  turns,rule.slectWinner(player1Choice+":"+player2Choice));
+				  sharedQ.add(rule.slectWinner(player1Choice+":"+player2Choice));
+				  turns++;
 			  }
 		  }catch (InterruptedException ex){
 			  ex.printStackTrace();
 		  }
-		
 	}
-	
 }
 

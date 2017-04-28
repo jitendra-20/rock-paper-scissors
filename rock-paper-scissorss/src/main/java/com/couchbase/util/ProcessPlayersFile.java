@@ -2,6 +2,7 @@ package com.couchbase.util;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.Arrays;
 import java.util.List;
 
@@ -15,8 +16,8 @@ public class ProcessPlayersFile {
 	private ObjectMapper mapper = new ObjectMapper();
 	
 	//Read the jsonFile
-	public Players processPlayersFile(File jsonFile) throws JsonParseException, JsonMappingException, IOException{
-		players=mapper.readValue(jsonFile, Players.class);
+	public Players processPlayersFile(InputStream jsonData) throws JsonParseException, JsonMappingException, IOException{
+		players=mapper.readValue(jsonData, Players.class);
 		return players;
 		
 	}

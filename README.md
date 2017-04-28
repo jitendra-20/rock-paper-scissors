@@ -43,12 +43,16 @@ What's not in scope:
 Performance optimization
 
 **Documentation:**
+
 This is Maven project. It has 7 java classes and one JSON file.
 This program expects player's input in JSON file. If the input file has not been passed, it will use the file which is present under \src\main\resources folder.  
 
 **Assumption:**
+
 Player1 and Player2 threads are the producers who will produce their choice and it gets stores in BlockingQueue. I have used 2 ArrayBlockingQueue for each player.
+
 Player3 thread is the consumer(Judge) which selects the winner of each round.
+
 1)package: com.couchbase.game  
      i)ConsumerPlayer.Java // This class picks the data from both the queue (player1Queue and Player2Queue) and selects the winner based on the rules defined in Rules.Java 
      ii)ProducerPlayer.Java// This class is used by both the players to produce their turn(choice). It puts the data in the Blocking Queue.

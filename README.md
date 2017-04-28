@@ -94,16 +94,29 @@ It can be run as “ java –jar rock-paper-scissorss-0.0.1-SNAPSHOT.jar”
 Expected Output:
 
 Player1 Input: [rock, rock, scissors]
+
 Player2 Input: [paper, rock, paper]
+
 #############################################################
+
 player1 choose  rock     on the 0-th invocation.
+
 player2 choose  paper     on the 0-th invocation.
+
 player2 choose  rock     on the 1-th invocation.
+
 player2 choose  paper     on the 2-th invocation.
+
 player1 choose  rock     on the 1-th invocation.
+
 Winner of  0-th round is player2
+
 player1 choose  scissors     on the 2-th invocation.
+
 Winner of  1-th round is null
+
 Winner of  2-th round is player1
+
 Winner of each round :[player2, null, player1]
+
            

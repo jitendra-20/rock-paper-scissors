@@ -1,5 +1,4 @@
 Write a multithreaded program that takes the following input:
-
 {
     "Player1":[
         "rock",
@@ -43,8 +42,6 @@ What's not in scope:
 
 Performance optimization
 
-
-
 **Documentation:**
 This is Maven project. It has 7 java classes and one JSON file.
 This program expects player's input in JSON file. If the input file has not been passed, it will use the file which is present under \src\main\resources folder.  
@@ -85,5 +82,4 @@ player1 choose  scissors     on the 2-th invocation.
 Winner of  1-th round is null
 Winner of  2-th round is player1
 Winner of each round :[player2, null, player1]
-
-             
+           

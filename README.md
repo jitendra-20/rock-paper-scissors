@@ -1,5 +1,5 @@
 
-##Introduction: 
+**Introduction:** 
 
 Rock paper scissors is a simple game that is played between two people. The player can choose as rock ,scissors or paper as their choice and this selection is compared with other players. The winning choice is made by a judge comparing selections from the user.
 
@@ -31,7 +31,7 @@ Please review and let me know your feedback on the same.
 
 
 
-##Documentation:
+**Documentation:**
 
 This is the Maven project. This program expects the player's input in a JSON file. If the input file has not been passed, it will use the file which is present under \src\main\resources folder.
 
@@ -41,7 +41,7 @@ Player1 and Player2 threads are the producers who will produce their choice and 
 
 Judge thread is the consumer who selects the winner of each round.
 
-##How to run:
+**How to run:**
 
 Either import this maven project in any JAVA IDE and run it. It can be run as a Java application. 
 

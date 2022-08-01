@@ -42,11 +42,12 @@ Player1 and Player2 threads are the producers who will produce their choice and 
 Judge thread is the consumer who selects the winner of each round.
 
 **How to run:**
+Download this project as zip file. 
 
 Either import this maven project in any JAVA IDE and run it. It can be run as a Java application. 
 
 or
-
+I have uploaded the artifacts as well. 
 It can be run as “ java –jar rock-paper-scissorss-0.0.1-SNAPSHOT.jar”
 ```
 
